@@ -13,5 +13,9 @@ public class MyFrame extends JFrame {
       button = new JButton("버튼을 누르시오");
       label = new JLabel("아직 버튼이 눌려지지 않았습니다.");
       button.addActionListener(new MyListener());
+      panel.add(button);
+      panel.add(label);
+      this.add(panel);
+      this.setVisible(true);
   }
 }
